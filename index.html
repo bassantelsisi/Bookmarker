@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Bookmarker</div>
+        <div class="text-center mb-4">
+            <h2><i class="bi bi-bookmark-fill"></i> Bookmark your favorite sites <i class="bi bi-bookmark-fill"></i>
+            </h2>
+        </div>
+
+        <form id="bookmarkForm" novalidate>
+            <div class="form-group">
+                <label for="siteName">📄 Site Name</label>
+                <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name" required>
+            </div>
+            <div class="form-group">
+                <label for="siteUrl">🔗 Site URL</label>
+                <input type="url" id="siteUrl" class="form-control" placeholder="Website URL" required>
+            </div>
+            <button type="submit" class="btn btn-warning btn-block">Submit</button>
+        </form>
+
+        <hr>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Index</th>
+                    <th scope="col">Website Name</th>
+                    <th scope="col">Visit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="bookmarkList">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+body {
+    background-color: #f7e6d1;
+}
+.container {
+    margin-top: 50px;
+}
+.title {
+    text-align: center;
+    font-family: Pacifico, cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+h2{
+    font-family: Righteous, cursive;
+    font-size: 25px;
+    color: green;
+    unicode-bidi: isolate;
+}
